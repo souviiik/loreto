@@ -1,0 +1,57 @@
+.gradient-bg {
+    
+    background: #000000; /* For browsers that do not support gradients */
+    background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
+}
+
+.gradient-hero-text {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.header-logo {
+    width: 250px;
+    height: 180px;
+}
+
+.hero {
+    background: url('../assets/images/slider-1.jpg') center / cover;
+}
+
+.hero-inner {
+    background: url('../assets/images/slider-2.jpg') center / cover;
+}
+
+.navbar-item img {
+    max-height: 4rem;
+}
+
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 40px; /* the height of the main nav */
+}
+
+nav ul li:hover > ul {
+	display:block;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 5px 10px;
+    z-index: 99;
+}
+
+nav ul ul li {
+	width:250px;
+	float:none;
+	display:list-item;
+    position: relative;
+    line-height: 2em;
+}
+
+@media (min-width: 960px) {
+    .has-equal-height {
+        height: 210px!important;
+    }
+    
+    .on-mobile-view {
+        overflow: scroll;
+    }
+}
